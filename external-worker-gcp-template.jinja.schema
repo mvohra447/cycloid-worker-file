@@ -1,6 +1,6 @@
 info:
   title: Cycloid workers
-  author: Cycloid.io
+  author: gcp.console.io
   description: |
     Deploy external workers pool for Cycloid.io.
     Using a Debian image based IGM running in a region.
@@ -27,11 +27,11 @@ properties:
   schedulerApiAddress:
     description: "Scheduler API url: Cycloid CI scheduler http api address (On-premises)"
     type: string
-    default: https://scheduler.cycloid.io
+    default: localhost
   schedulerHost:
     description: "Scheduler host: Cycloid CI scheduler host address (On-premises)"
     type: string
-    default: scheduler.cycloid.io
+    default: localhost
   schedulerPort:
     description: "Scheduler port: Cycloid CI scheduler port (On-premises)"
     type: integer
@@ -39,7 +39,7 @@ properties:
   tsaPublicKey:
     description: "Scheduler TSA public key: Cycloid CI scheduler public key (On-premises)"
     type: string
-    default: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC+To6R1hDAO00Xrt8q5Md38J9dh+aMIbV2GTqQkFcKwVAB6czbPPcitPWZ7y3Bw1dKMC8R7DGRAt01yWlkYo/voRp5prqKMc/uzkObhHNy42eJgZlStKU1IMw/fx0Rx+6Y3NClCCOecx415dkAH+PFudKosq4pFB9KjfOp3tMHqirMSF7dsbM3910gcPBL2NFHkOZ4cNfeSztXEg9wy4SExX3CHiUyLiShpwXa+C2f6IPdOJt+9ueXQIL0hcMmd12PRL5UU6/e5U5kldM4EWiJoohVbfoA1CRFF9QwJt6H3IiZPmd3sWqIVVy6Vssn5okjYLRwCwEd8+wd8tI6OnNb"
+    default: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDFhlWyleyHB/DiSCZjYGxtNfdfaDzZ8Ne9WBDp/3YZonvTHbsxLyDDmLreEiQG3yqblENXyS12TR9kLXw/GmXr4nqZf5OoNEdH4WpSZWGl+cXLZewNO2wtP53rbBxzMW77DlGEmiJwDVJz3mTYN7M9svyhwfSUUY++LOf/NpenvnR04fbUc/eKxAXl4jZCXPTESJ4A1CsdJxcHBRSBKQ6A2n3Jg3BUoW4fnnfTsYc2QyTgMb10VNhy4ZmzeLgpMtmB5378oSjCUeWRLcEGCPKhFuZK4TpU8ZaftibK1P6U/RkItpK51Jreyi0NeumozM6xXxR1LnO9cCVytKs9xjqx"
 
   region:
     type: string
